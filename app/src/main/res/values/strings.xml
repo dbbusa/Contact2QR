@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Contact2QR</string>
+    <string name="username">Username</string>
+    <string name="strLogin">Login</string>
+    <string name="txtSignin">Sign In</string>
+    <string name="txtpass">Password</string>
+    <string name="strAbt">About</string>
+    <string name="strContact">Contact Us</string>
 </resources>
