@@ -3,6 +3,7 @@ package in.ac.rku.contact2qr;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -31,7 +32,7 @@ public class Login extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.about:
-                        Toast.makeText(getApplicationContext(),"Item 1 Selected",Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getApplicationContext(),AboutUs.class));
                         return true;
                     case R.id.contact:
                         Toast.makeText(getApplicationContext(),"Item 2 Selected",Toast.LENGTH_LONG).show();
