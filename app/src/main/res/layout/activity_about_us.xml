@@ -39,8 +39,9 @@
 
             <ImageView
                 android:id="@+id/imgPer1"
-                android:layout_width="52dp"
-                android:layout_height="52dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
                 android:layout_margin="10dp"
                 app:srcCompat="@drawable/ic_user"
                 tools:ignore="ContentDescription" />
@@ -50,34 +51,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txtNamePer1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hiren Panchani"
+                    android:text="Hiren Panchani - 19SOECE13009"
                     android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"/>
 
                 <TextView
-                    android:id="@+id/txtEnrollPer1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="19SOECE13009"
-                    android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txtEmailPer1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="hpanchani813@rku.ac.in"
-                    android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/text_subtitle"
+                    />
             </LinearLayout>
         </LinearLayout>
 
@@ -90,8 +80,9 @@
 
             <ImageView
                 android:id="@+id/imgPer2"
-                android:layout_width="52dp"
-                android:layout_height="52dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
                 android:layout_margin="10dp"
                 app:srcCompat="@drawable/ic_user"
                 tools:ignore="ContentDescription" />
@@ -101,34 +92,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txtNamePer2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Darshit Busa"
+                    android:text="Darshit Busa - 19SOECE13003"
                     android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"/>
 
                 <TextView
-                    android:id="@+id/txtEnrollPer2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="19SOECE13003"
-                    android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txtEmailPer2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="dbusa547@rku.ac.in"
-                    android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/text_subtitle"
+                    />
             </LinearLayout>
         </LinearLayout>
 
@@ -141,8 +121,9 @@
 
             <ImageView
                 android:id="@+id/imgPer3"
-                android:layout_width="52dp"
-                android:layout_height="52dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
                 android:layout_margin="10dp"
                 app:srcCompat="@drawable/ic_user"
                 tools:ignore="ContentDescription" />
@@ -152,34 +133,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txtNamePer3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hitakshi Vasoya"
+                    android:text="Hitakshi Vasoya - 18SOECE11066"
                     android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"/>
 
                 <TextView
-                    android:id="@+id/txtEnrollPer3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="18SOECE11066"
-                    android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txtEmailPer3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="hvasoya013@rku.ac.in"
-                    android:textColor="@color/icons"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/text_subtitle"
+                    />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -189,8 +159,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="About Us"
-        android:textColor="#fff"
+        android:text="@string/strAbt"
+        android:textColor="@color/icons"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"

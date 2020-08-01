@@ -35,10 +35,7 @@ public class Login extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),AboutUs.class));
                         return true;
                     case R.id.contact:
-                        Toast.makeText(getApplicationContext(),"Item 2 Selected",Toast.LENGTH_LONG).show();
-                        return true;
-                    case R.id.login:
-                        Toast.makeText(getApplicationContext(),"Item 3 Selected",Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getApplicationContext(),ContactUs.class));
                         return true;
                     default:
                         return false;

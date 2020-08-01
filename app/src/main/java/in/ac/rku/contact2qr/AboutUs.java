@@ -32,14 +32,11 @@ public class AboutUs extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.about:
-                        startActivity(new Intent(getApplicationContext(),AboutUs.class));
-                        return true;
                     case R.id.contact:
-                        Toast.makeText(getApplicationContext(),"Item 2 Selected",Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getApplicationContext(),ContactUs.class));
                         return true;
                     case R.id.login:
-                        Toast.makeText(getApplicationContext(),"Item 3 Selected",Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getApplicationContext(),Login.class));
                         return true;
                     default:
                         return false;

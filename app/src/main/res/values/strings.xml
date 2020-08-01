@@ -4,6 +4,6 @@
     <string name="strLogin">Login</string>
     <string name="txtSignin">Sign In</string>
     <string name="txtpass">Password</string>
-    <string name="strAbt">About</string>
+    <string name="strAbt">About Us</string>
     <string name="strContact">Contact Us</string>
 </resources>
