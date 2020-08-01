@@ -6,6 +6,8 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
@@ -18,29 +20,30 @@ public class ContactUs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
+        setTitle("Contact Us");
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.colorPrimaryDark));
         window.setNavigationBarColor(ContextCompat.getColor(this,R.color.colorPrimaryDark));
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.inflateMenu(R.menu.menu);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.about:
-                        startActivity(new Intent(getApplicationContext(),AboutUs.class));
-                        return true;
-                    case R.id.login:
-                        startActivity(new Intent(getApplicationContext(),Login.class));
-                        return true;
-                    default:
-                        return false;
-                }
-            }
-        });
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.login:
+                startActivity(new Intent(getApplicationContext(),Login.class));
+                return true;
+            case R.id.about:
+                startActivity(new Intent(getApplicationContext(),AboutUs.class));
+                return true;
+            default:
+                return false;
+        }
     }
 }
