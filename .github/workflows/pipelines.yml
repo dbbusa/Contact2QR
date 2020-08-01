@@ -1,0 +1,22 @@
+name: Send Telegram Notification For Android Group Project 
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  build:
+    name: Send Telegram Notification For Android Group Project
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send Message in Telegram
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.MESSAGEID }}
+        token: ${{ secrets.BOTTOKEN }}
+        message: |
+          Project: Contact2QR
+          Commit Message: ${{ github.event.head_commit.message }}
+          Commited Actor: ${{ github.actor }}
