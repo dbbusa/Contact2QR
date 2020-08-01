@@ -152,7 +152,6 @@
         android:text="@string/strAbt"
         android:textColor="@color/icons"
         android:textSize="40dp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
