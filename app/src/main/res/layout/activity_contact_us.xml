@@ -4,46 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/screensplash"
     android:orientation="vertical"
     tools:context=".ContactUs">
 
-    <Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@android:color/transparent"
-        android:theme="@style/Theme.AppCompat.Light"
-        tools:ignore="MissingConstraints" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieView"
+    <ImageView
+        android:id="@+id/imglogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:background="@drawable/gradient"
+        android:src="@drawable/logoround"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLabelContact"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="qrcodesplash.json"
-        app:lottie_loop="true" />
+         />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/cardview"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottieView"
-        app:layout_constraintVertical_bias="0.19999999">
+        app:layout_constraintTop_toBottomOf="@+id/imglogo"
+        app:layout_constraintVertical_bias="0.22000003">
 
 
         <LinearLayout
@@ -196,11 +185,10 @@
         android:layout_height="53dp"
         android:layout_marginTop="56dp"
         android:text="@string/strContact"
-        android:textColor="@color/icons"
+        android:textColor="@color/primaryText"
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/lottieView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
